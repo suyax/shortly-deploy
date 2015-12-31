@@ -37,9 +37,11 @@ module.exports = function(grunt) {
     jshint: {
       files: [
         // Add filespec list here
+        'public/**/*.js',
+        'lib/**/*.js'
       ],
       options: {
-        force: 'true',
+        force: 'false',
         jshintrc: '.jshintrc',
         ignores: [
           'public/lib/**/*.js',
@@ -106,7 +108,7 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
 
   grunt.registerTask('test', [
-    'mochaTest'
+    'jshint','mochaTest'
   ]);
 
   grunt.registerTask('build', [
