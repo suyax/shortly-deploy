@@ -1,5 +1,4 @@
 {
-  //updated WEBSITE_NODE_DEFAULT_VERSION
   "name": "shortly-express",
   "version": "0.0.1",
   "description": "shortly using express",
